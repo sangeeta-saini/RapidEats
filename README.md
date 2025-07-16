@@ -1,12 +1,18 @@
-# React + Vite
+🍔 RapidEats - Food Delivery Web App (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RapidEats is an ongoing food delivery web application focused on providing a smooth and fast user experience for browsing restaurants, viewing menus, adding food to cart, and placing orders. The frontend is being built using modern web technologies with a focus on responsiveness and usability.
 
-Currently, two official plugins are available:
+🚧 Project Status: In Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Work in Progress – More features, styling improvements, and integrations are actively being developed.
 
-## Expanding the ESLint configuration
+🚀 Planned / In-Progress Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔐 User Signup/Login with Passport.js  
+🍽️ Browse restaurants and menu items  
+🟢 Veg/Non-Veg labels on dishes  
+🛒 Add to cart and update quantities  
+📦 Place orders with address and payment method  
+💳 Payment modes: Cash on Delivery, UPI  
+❤️ Wishlist functionality  
+📱 Fully responsive UI  
