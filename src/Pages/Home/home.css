@@ -1,0 +1,10 @@
+.home-container {
+  background-color: rgb(240, 239, 239);
+  width: 100%;
+  padding-top: 120px;
+}
+
+.rest {
+  padding: 30px 0px 10px 50px;
+  font-size: 25px;
+}

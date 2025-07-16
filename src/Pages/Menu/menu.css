@@ -1,0 +1,86 @@
+.menu-page {
+  padding-top: 120px;
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.menu-head {
+  border-bottom: 1px solid rgb(173, 173, 173);
+  margin-bottom: 20px;
+  max-width: 1200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-card {
+  border: 1px solid rgb(215, 214, 214);
+  display: flex;
+  background-color: rgb(237, 240, 242);
+  border-radius: 10px;
+  gap: 30px;
+  margin: 20px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-name {
+  padding: 40px 5px 5px 15px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.menu-price {
+  padding: 5px 5px 3px 15px;
+  font-weight: 300;
+}
+
+.ratings {
+  display: flex;
+  padding: 0px 5px 5px 7px;
+}
+
+.menu-rating {
+  padding: 4px 5px 5px 5px;
+  color: rgba(2, 6, 12, 0.6);
+  font-weight: 500;
+}
+
+.menu-description {
+  padding: 3px 5px 5px 14px;
+  color: rgba(2, 6, 12, 0.6);
+  font-weight: 600;
+}
+
+.menu-image {
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.add-btn {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgb(27, 166, 114);
+  width: 120px;
+  padding: 10px;
+  border: 1px solid rgb(145, 145, 145);
+  border-radius: 10px;
+}
+
+.img-btn {
+  position: relative;
+  width: 200px;
+  border-radius: 12px;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
