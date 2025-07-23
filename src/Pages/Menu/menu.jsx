@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./menu.css";
 import Rating from "./../../assets/rating.png";
+import AddToBagButton from "./addButton";
 
 function Menu() {
   const { id } = useParams();
@@ -64,7 +65,7 @@ function Menu() {
                     }
                   />
                   <div className="btn-container">
-                    <button className="add-btn">ADD</button>
+                    <AddToBagButton />
                   </div>
                 </div>
               </div>

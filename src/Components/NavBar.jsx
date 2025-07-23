@@ -46,7 +46,7 @@ function NavBar() {
             </div>
 
             <div className="cart">
-              <a href="cart">
+              <a href="/cart">
                 <img className="cart" src={CartSVG} />
               </a>
             </div>

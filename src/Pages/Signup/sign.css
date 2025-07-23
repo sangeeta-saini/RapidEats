@@ -76,6 +76,12 @@ body {
   margin-bottom: 5px;
 }
 
+.errors {
+  color: rgb(244, 118, 118);
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 500px) {
   .sign-container {
     max-width: 350px;

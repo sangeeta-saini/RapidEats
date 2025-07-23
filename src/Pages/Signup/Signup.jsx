@@ -45,12 +45,12 @@ function Signup() {
         password,
       });
 
-      toast.success("Signed up successfully!");
+      // toast.success("Signed up successfully!");
       console.log(result.data);
       navigate("/home");
     } catch (error) {
       console.log(error);
-      toast.error(err.response?.data?.message || "Signup failed");
+      // toast.error(err.response?.data?.message || "Signup failed");
     }
   };
 
@@ -99,7 +99,7 @@ function Signup() {
             {error.password && <div className="error">{error.password}</div>}
           </div>
           <div>
-            <Toaster position="top-center" reverseOrder={false} />
+            {/* <Toaster position="top-center" reverseOrder={false} /> */}
             <button className="sign-btn" type="submit">
               Sign-Up
             </button>
