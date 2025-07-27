@@ -65,7 +65,7 @@ function Menu() {
                     }
                   />
                   <div className="btn-container">
-                    <AddToBagButton />
+                    <AddToBagButton product={item} />
                   </div>
                 </div>
               </div>

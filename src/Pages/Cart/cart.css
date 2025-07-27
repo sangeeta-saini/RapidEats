@@ -1,3 +1,108 @@
 .cart-container {
   padding-top: 120px;
 }
+
+.address-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.address-container h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.address-container p {
+  color: #666;
+  font-size: 14px;
+}
+
+.address-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.address-card {
+  flex: 1;
+  padding: 16px;
+  border: 1.5px dashed #ccc;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.saved-address {
+  border: 1.5px solid #ccc;
+  background-color: #fff;
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.address-icon {
+  font-size: 20px;
+}
+
+.eta {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.deliver-btn,
+.add-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0c8a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn {
+  background-color: #fff;
+  color: #0c8a5f;
+  border: 1px solid #0c8a5f;
+}
+
+.address-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.address-form input,
+.address-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.address-type {
+  display: flex;
+  gap: 16px;
+  font-weight: 500;
+}
+
+.address-form button {
+  background-color: #0c8a5f;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

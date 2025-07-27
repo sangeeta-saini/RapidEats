@@ -22,16 +22,14 @@ const AddToBagButton = ({ product }) => {
 
     try {
       await axios.post(
-        "http://localhost:8080/cart/add",
+        "http://localhost:8080/cart/",
         {
-          name: product.name,
-          price: product.price,
-          image: product.images,
-          quantity: 1,
+          userId: userId,
+          dishId: product._id, // ✅ pass _id of the dish
         },
         {
           headers: {
-            user_id: userId,
+            "Content-Type": "application/json", // ✅ recommended
           },
         }
       );

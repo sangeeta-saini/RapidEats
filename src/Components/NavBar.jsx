@@ -19,13 +19,7 @@ function NavBar() {
                 <a href="/home">Home</a>
               </li>
               <li>
-                <a href="dishes">Dishes</a>
-              </li>
-              <li>
-                <a href="orders">Orders</a>
-              </li>
-              <li>
-                <a href="/contact">Contact</a>
+                <a href="/orders">Orders</a>
               </li>
             </ul>
           </div>

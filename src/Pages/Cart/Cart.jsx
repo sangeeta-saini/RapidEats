@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./cart.css";
+import Address from "./address.jsx";
 
 const CartPage = () => {
   const [user, setUser] = useState(null);
@@ -12,10 +13,21 @@ const CartPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [userRes, addressRes, cartRes] = await Promise.all([
-          // fetch("http://localhost:8080/user/signup"),
-          // fetch("http://localhost:8080/api/user/address"),
-          fetch("http://localhost:8080/cart/add"),
+        const userId = localStorage.getItem("user_id");
+
+        if (!userId) {
+          console.error("User ID not found in localStorage");
+          setLoading(false);
+          return;
+        }
+
+        const [addressRes, cartRes] = await Promise.all([
+          fetch("http://localhost:8080/address/add", {
+            headers: { user_id: userId },
+          }),
+          fetch("http://localhost:8080/cart/", {
+            headers: { user_id: userId },
+          }),
         ]);
 
         const userData = await userRes.json();
@@ -45,17 +57,7 @@ const CartPage = () => {
 
   return (
     <div className="cart-container">
-      {/* Address */}
-      <div className="cart-section">
-        <h4>📍 Delivery Address</h4>
-        {address ? (
-          <p>{address.fullAddress}</p>
-        ) : (
-          <button className="add-btn" onClick={() => alert("Add address")}>
-            Add New Address
-          </button>
-        )}
-      </div>
+      <Address />
 
       {/* Cart Items */}
       {cart.length === 0 ? (

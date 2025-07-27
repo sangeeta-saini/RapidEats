@@ -9,6 +9,7 @@ import Signup from "./Pages/Signup/Signup.jsx";
 import Cart from "./Pages/Cart/Cart.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import Menu from "./Pages/Menu/menu.jsx";
+import Orders from "./Pages/Orders/Orders.jsx";
 
 function App() {
   // const [userId, setUserId] = useState(() => localStorage.getItem("user_id"));
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/restaurant/:id" element={<Menu />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
     </BrowserRouter>
   );
